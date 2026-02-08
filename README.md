@@ -5,17 +5,12 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## 📖 About this Repository
-
 This is the complete record of my Vision–Language–Action (VLA) learning journey, starting February 2026.
-
 **Background:** Strong foundation in Python and deep learning; goal is to master VLA techniques and publish research.
-
 **Learning Path:** Systematic learning plan based on the StarVLA project
-
 **Update Frequency:** At least 3 commits per week
 
 ## 🎯 Learning Goals
-
 - [ ] **Month 1:** Master modern architectures such as Transformer and ViT
 - [ ] **Month 2:** Understand VLA implementation details
 - [ ] **Months 3–4:** Complete MVP research project
