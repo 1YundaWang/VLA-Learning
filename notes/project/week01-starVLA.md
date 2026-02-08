@@ -72,23 +72,23 @@ your_ckpt=/mnt/16T/wangyunda/starVLA/Qwen2.5-VL-GR00T-LIBERO-4in1/checkpoints/st
    ```bash
    pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
 
-```
+    ```
 
 2. **安装适配的 FlashAttention 二进制包**：
-```bash
-pip install [https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.3cxx11abiFALSE-cp310-cp310-linux_x86_64.whl](https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.3cxx11abiFALSE-cp310-cp310-linux_x86_64.whl)
+    ```bash
+    pip install [https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.3cxx11abiFALSE-cp310-cp310-linux_x86_64.whl](https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.3cxx11abiFALSE-cp310-cp310-linux_x86_64.whl)
 
-```
+    ```
 
 
 3. **过滤并安装其余依赖**：
-```bash
-# 过滤掉已手动安装的 torch 依赖，避免冲突
-grep -vE "torch|torchvision" requirements.txt > requirements_new.txt
-pip install -r requirements_new.txt
-pip install -e .
+    ```bash
+    # 过滤掉已手动安装的 torch 依赖，避免冲突
+    grep -vE "torch|torchvision" requirements.txt > requirements_new.txt
+    pip install -r requirements_new.txt
+    pip install -e .
 
-```
+    ```
 
 
 
@@ -111,13 +111,13 @@ pip install -e .
 * **GPU ID**: 确保 `export gpu_id=0` 与当前服务器空闲显卡编号一致。
 * **路径检查**: 确保 `your_ckpt` 指向了正确的 `.pt` 文件绝对路径。
 
-```bash
-# 修改示例
-export gpu_id=0 
-export star_vla_python=/mnt/16T/wangyunda/miniconda3/envs/starVLA/bin/python 
-your_ckpt=/mnt/16T/wangyunda/starVLA/Qwen2.5-VL-GR00T-LIBERO-4in1/checkpoints/steps_30000_pytorch_model.pt
+    ```bash
+    # 修改示例
+    export gpu_id=0 
+    export star_vla_python=/mnt/16T/wangyunda/miniconda3/envs/starVLA/bin/python 
+    your_ckpt=/mnt/16T/wangyunda/starVLA/Qwen2.5-VL-GR00T-LIBERO-4in1/checkpoints/steps_30000_pytorch_model.pt
 
-```
+    ```
 
 ---
 
